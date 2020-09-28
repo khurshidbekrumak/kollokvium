@@ -45,34 +45,34 @@
                 class="list-unstyled components text-center d-flex-inline justify-content-center mt-2">
                 <li class=" p-1 only-desktop">
                     <i class="far fas fa-th-large fa-2x hide" id="toggle-grid" data-hotkey="ctrl+g"
-                        title="toggle active speaker / grid view"></i>
+                        title="Показать Спикера / Показать всех"></i>
                 </li>
                 <li class="p-1 only-desktop">
                     <i class="far fa-minus-square fa-2x hide " id="toggle-pip"
-                        title="toggle picture-in-picture mode"></i>
+                        title="Вкл\выкл картинка в картинке"></i>
                 </li>
                 <li class="p-1">
-                    <i class="fas fa-volume-up fa-2x hide" title="mute/unmute all audio" id="mute-speakers"
+                    <i class="fas fa-volume-up fa-2x hide" title="Вкл\выкл Звук" id="mute-speakers"
                         style="cursor:pointer;" data-hotkey="ctrl+q"></i>
                 </li>
                 <li class="p-1">
                     <i class="fas fa-share-alt fa-2x hide" id="share-slug" data-container="body" data-toggle="popover"
                         data-placement="bottom" data-trigger="click"
-                        data-content="Your room link is now in the clipboard"></i>
+                        data-content="Ссылка скопирована"></i>
                 </li>
                 <li class="p-1">
-                    <i class="fas fa-lock-open fa-2x hide" id="context-lock" title="Lock / unlock this room "></i>
+                    <i class="fas fa-lock-open fa-2x hide" id="context-lock" title="Заблокировать/Разблокировать комнату "></i>
                 </li>
                 <div class="p-1">
                     <i class="fas fa-closed-captioning fa-2x hide" id="subtitles"
-                        title="Generate captions and send to remote peers" data-hotkey="ctrl+s"></i>
+                        title="Автоматическая генерация субтитров, для участников." data-hotkey="ctrl+s"></i>
                     </li>
                     <li class="p-1">
                         <i class="fas fa-book fa-2x hide" id="show-journal"
-                            title="Show / hide journal ( meeting transcript )"></i>
+                            title="Показать/Скрыть журнал (стенограмма встречи)"></i>
                     </li>
                     <li class="p-1 mt-4">
-                        <i class="fas fa-door-open fa-2x hide" id="leave-context" title="leave this room now!"></i>
+                        <i class="fas fa-door-open fa-2x hide" id="leave-context" title="Выход"></i>
                     </li>
             </ul>
         </nav>
@@ -82,7 +82,7 @@
                 <div class="container-fluid">
                     <i class="fas fa-2x fa-bars text-light d-none" id="toggle-top"></i>
                     <div class="our-brand" id="appVersion">
-                        <img src="img/logo.png" alt="Kollokvium" class="img-responsive mr-1"
+                        <img src="img/logo.png" alt="Sulpak Briefing" class="img-responsive mr-1"
                             style="max-height:22px;filter:invert()" id="watermark">
                         Sulpak Briefing
                     </div>
@@ -112,15 +112,15 @@
                 <div class="modal-dialog modal-dialog-scrollable modal-dialog-centered modal-lg" role="document">
                     <div class="modal-content">
                         <div class="modal-header">
-                            <div class="modal-title" id="exampleModalScrollableTitle">Meeting journal
-                                <span class="text-muted mr-1"> - works best with head
-                                    phones <i class="fas fa-headphones"></i> </span></div>
+                            <div class="modal-title" id="exampleModalScrollableTitle">Журнал встреч
+                                <span class="text-muted mr-1"> - лучше всего работает с
+                                     наушниками <i class="fas fa-headphones"></i> </span></div>
                             <button type="button" class="close" data-dismiss="modal" aria-label="Close">
                                 <span aria-hidden="true">&times;</span>
                             </button>
                         </div>
                         <div class="modal-body" id="journal-content">
-                            <div class="journal">Nothing in the journal. You need to activate captions.&nbsp; <i
+                            <div class="journal">В журнале ничего нет. Вам нужно активировать Титры.&nbsp; <i
                                     class="fas fa-closed-captioning"></i></div>
                         </div>
                         <div class="modal-footer">
@@ -136,8 +136,8 @@
                         <div class="col-md-8 mx-auto p-2 my-2" id="transcript-results">
                             <div>
                                 <div class="modal-title">
-                                    Your captured speech <span class="text-muted mr-1"> - works best with head
-                                        phones <i class="fas fa-headphones"></i> </span>
+                                    Ваша записанная речь <span class="text-muted mr-1"> - лучше всего работает с
+                                     наушниками <i class="fas fa-headphones"></i> </span>
                                 </div>
                             </div>
                             <hr>
@@ -168,13 +168,13 @@
                             <div class="form-row">
                                 <div class="form-group col-md-8">
                                     <input type="text" class="form-control" id="chat-message"
-                                        placeholder="What do you want to say?">
+                                        placeholder="Используй чат!">
                                 </div>
                                 <div class="form-group col-md-4" id="share-box">
                                     <div class="progress hide" id="file-progress">
                                         <div class="progress-bar" role="progressbar" aria-valuenow="10"
                                             aria-valuemin="0" aria-valuemax="100" style="width:0%">
-                                            <span class="sr-only">70% Complete</span>
+                                            <span class="sr-only">70% в процессе</span>
                                         </div>
                                     </div>
                                     <div class="custom-file" id="share-file-box">
@@ -230,8 +230,8 @@
                                 <h4 class="alert-heading">Не удалось получить доступ к камере</h4>
                                 <p>
                                     <strong>Damn!</strong>
-                                    Sulpak Briefing failed to get hold of your camera, it will not work for you!
-                                    We automaticly reported the issue to the Sulpak Briefing Team.
+                                    Sulpak Briefing не удалось подключиться к камере!
+                                    Мы автоматически сообщили о проблеме в команду Sulpak Briefing.
                                 </p>
                             </div>
 
@@ -248,9 +248,9 @@
                                 </button>
                             </div>
                             <input list="slug-history" type="text" id="context-name"
-                                placeholder="Enter any room name..." value="" class="form-control form-control-lg"
+                                placeholder="Введите любое название комнаты ..." value="" class="form-control form-control-lg"
                                 data-container="body" data-toggle="popover" data-placement="top" data-trigger="none"
-                                data-content="Эй! Название вашей комнаты должно состоять минимум из шести символов. Это может быть много вещей, таких как название компании, случай встречи или что угодно ... Хорошего дня!">
+                                data-content="Название вашей комнаты должно состоять минимум из шести символов!">
 
                             <datalist id="context-history">
 
@@ -259,7 +259,7 @@
 
                             <div class="input-group-append">
                                 <button id="join-conference" class="btn btn-primary bt-lg" type="button"
-                                    disabled>START</button>
+                                    disabled>Начать</button>
                             </div>
 
                         </div>
@@ -269,7 +269,7 @@
                                 <button type="button" class="close" data-dismiss="alert" aria-label="Close">
                                     <span aria-hidden="true">&times;</span>
                                 </button>
-                                <h5 class="alert-heading">You can use End-to-end encryption
+                                <h5 class="alert-heading">Вы можете использовать сквозное шифрование
                                 </h5>
                                 <div class="input-group mb-3 mt-1">
                                     <div class="input-group-prepend">
@@ -279,13 +279,13 @@
                                         </div>
                                     </div>
                                     <input type="text" class="form-control" id="shared-secret"
-                                        placeholder="your shared secret (6 characters or more...)" disabled>
+                                        placeholder="ваш общий ключ (6 символов или более ...)" disabled>
                                 </div>
                                 <hr>
                                 <p class="mb-0 p-1">
-                                    When using E2EE you and your friends needs (all) shared-secret-key (enter above)
-                                    before start/join.
-                                    They also also need Chrome 84+.
+                                    При использовании E2EE вам и вашим друзьям нужен (весь) общий секретный ключ (введите выше)
+                                     перед запуском / присоединением.
+                                     Также им нужен Chrome 84+.
                                 </p>
                             </div>
 
@@ -302,8 +302,7 @@
                         <div class="form-row">
                             <div class="form-group col-md-12">
                                 <input id="text-message" type="text"
-                                    class="form-control form-control-lg"" disabled  placeholder=" What do you want to
-                                    say?">
+                                    class="form-control form-control-lg"" disabled  placeholder="Используй чат">
                             </div>
                         </div>
                     </div>
@@ -339,7 +338,7 @@
                 <div class="modal-dialog">
                     <div class="modal-content">
                         <div class="modal-header">
-                            <h4 class="modal-title">Your recordings</h4>
+                            <h4 class="modal-title">Ваши записи</h4>
                             <button type="button" class="close" data-dismiss="modal" aria-label="Close">
                                 <span aria-hidden="true">&times;</span>
                             </button>
@@ -350,7 +349,7 @@
                             </div>
                         </div>
                         <div class="modal-footer">
-                            <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                            <button type="button" class="btn btn-default" data-dismiss="modal">Закрыть</button>
                         </div>
                     </div>
                 </div>
@@ -361,7 +360,7 @@
                 <div class="modal-dialog modal-lg" role="document">
                     <div class="modal-content">
                         <div class="modal-header">
-                            <h5 class="modal-title">Sulpak Briefing settings</h5>
+                            <h5 class="modal-title">Sulpak Briefing настройки</h5>
                             <button type="button" class="close" data-dismiss="modal" aria-label="Close">
                                 <span aria-hidden="true">&times;</span>
                             </button>
@@ -371,20 +370,20 @@
                                 <div class="row">
                                     <div class="col-md-6">
                                         <div class="form-group">
-                                            <label for="txt-nick">Nickname</label>
+                                            <label for="txt-nick">Имя</label>
                                             <input type="text" class="form-control" id="txt-nick"
                                                 placeholder="Nickname displayed in chat...">
                                         </div>
                                     </div>
                                     <div class="col-md-6">
                                         <div class="form-group" id="languages">
-                                            <label for="txt-nick">Language (used by translation & subtitles) </label>
+                                            <label for="txt-nick">Язык (используемый при переводе и субтитрах)</label>
                                         </div>
                                         <div class="form-check">
 
                                             <input class="form-check-input" type="checkbox" id="show-text-to-speech"
                                                 value="true">
-                                            <label for="txt-nick">Enable text to speech</label>
+                                            <label for="txt-nick">Включить преобразование текста в речь</label>
                                         </div>
                                     </div>
 
@@ -396,34 +395,34 @@
                                 <div class="row">
                                     <div class="col-md-6">
                                         <div class="form-group">
-                                            <label for="sel-video">Video input</label>
+                                            <label for="sel-video">Видео вход</label>
                                             <select class="form-control" id="sel-video">
-                                                <option value="">Auto detected</option>
+                                                <option value="">Автоматическое обнаружение</option>
                                             </select>
                                         </div>
 
                                         <div class="form-group">
-                                            <label for="sel-audio-in">Audio input</label>
+                                            <label for="sel-audio-in">Аудио ввод</label>
                                             <select class="form-control" id="sel-audio-in">
-                                                <option value="">Auto detected</option>
+                                                <option value="">Автоматическое обнаружение</option>
                                             </select>
                                         </div>
                                         <div class="form-group">
-                                            <label for="sel-audio-out">Audio output</label>
+                                            <label for="sel-audio-out">Аудио выход</label>
 
                                             <select class="form-control" id="sel-audio-out">
-                                                <option value="">Auto detected</option>
+                                                <option value="">Автоматическое обнаружение</option>
                                             </select>
                                         </div>
 
                                         <div class="form-group">
-                                            <label for="sel-video-res">Camera resolution</label>
+                                            <label for="sel-video-res">Разрешение камеры</label>
                                             <div class="input-group mb-3">
 
                                                 <select class="form-control" id="sel-video-res" data-container="body"
                                                     data-toggle="popover" data-placement="top"
                                                     data-content="The device cannot use that resolution try another ( lower probably )">
-                                                    <option value="">Use recommended settings</option>
+                                                    <option value="">Используйте рекомендуемые настройки</option>
                                                 </select>
                                             </div>
                                         </div>
@@ -440,7 +439,7 @@
 
 
                                         <div class="alert alert-info">
-                                            <p>Apply virtual background <span class="badge badge-primary">beta</span>
+                                            <p>Применить виртуальный фон <span class="badge badge-primary">beta</span>
                                             </p>
 
                                             <input type="button" class="btn btn-link" id="apply-virtual-bg"
@@ -460,11 +459,11 @@
                             </div>
                         </div>
                         <div class="modal-footer">
-                            <button type="button" class="btn btn-link pull-left" id="clear-settings" disabled>Clear
-                                settings</button>
-                            <button type="button" class="btn btn-primary" id="save-settings">Save
-                                changes</button>
-                            <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                            <button type="button" class="btn btn-link pull-left" id="clear-settings" disabled>Очистить
+                                 настройки</button>
+                            <button type="button" class="btn btn-primary" id="save-settings">Сохранить
+                                 изменения</button>
+                            <button type="button" class="btn btn-secondary" data-dismiss="modal">Закрыть</button>
                         </div>
                     </div>
                 </div>
