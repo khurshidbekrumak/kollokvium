@@ -1,7 +1,7 @@
 {
-    "domain": "Kollokvium",
+    "domain": "Sulpak Briefing",
     "host": "",
-    "contextPrefix": "kollokvium",
+    "contextPrefix": "Sulpak Briefing",
     "serverUrl": "",
     "version": "1.7.11",
     "reconnectInterval": 10000,
